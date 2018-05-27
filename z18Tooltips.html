@@ -13,8 +13,22 @@
    <script src="./script.js" charset="utf-8"></script>
 </head>
 <body>
-  <div>
+
+<!-- 按button鍵會出現提示訊息 -->
+
+  <div class="component demo" style="height: 300vh">
+
+    <button class="btn btn-info"
+      data-toggle="tooltip"
+      title="hello--"
+      data-placement="right">
+      tooltip
+    </button>
 
   </div>
 </body>
 </html>
+
+<!-- script.js
+  $('[data-toggle="tooltip"]').tooltip()
+-->

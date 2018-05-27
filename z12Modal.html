@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>chihen bootstrap</title>
+   <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.0.0-beta.2/dist/css/bootstrap.css">
+   <link rel="stylesheet" href="./style.css">
+   <script src="https://unpkg.com/jquery@3.2.1/dist/jquery.js" charset="utf-8"></script>
+   <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" charset="utf-8"></script>
+   <script src="https://unpkg.com/bootstrap@4.0.0-beta.2/dist/js/bootstrap.js" charset="utf-8"></script>
+   <script src="./script.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="component demo">
+
+<!-- 基本對話框 -->
+  <!--  <div class="modal fade show d-block">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>hello--</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary">取消</button>
+            <button class="btn btn-success">確認</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+<!-- 按按鈕跑出對話框 -->             <!-- 按下去後背景是有顏色 不要就打backdrop~ -->
+    <div id="modal-demo" class="modal fade show" data-backdrop="false">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>hello--</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-secondary">取消</button>
+            <button class="btn btn-info">確認</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-danger"
+      data-toggle="modal"
+      data-target="#modal-demo">刪除</button>
+
+  </div>
+</body>
+</html>
+
+<!--  script.js
+$('#modal-demo').on('show.bs.modal', function () {
+  console.log('show')
+})
+$('#modal-demo').on('shown.bs.modal', function () {
+  console.log('shown')
+})
+$('#modal-demo').on('hide.bs.modal', function () {
+  console.log('hide')
+})
+$('#modal-demo').on('hidden.bs.modal', function () {
+  console.log('hidden')
+})
+-->

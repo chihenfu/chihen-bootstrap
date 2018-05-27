@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>chihen bootstrap</title>
+   <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.0.0-beta.2/dist/css/bootstrap.css">
+   <link rel="stylesheet" href="./style.css">
+   <script src="https://unpkg.com/jquery@3.2.1/dist/jquery.js" charset="utf-8"></script>
+   <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" charset="utf-8"></script>
+   <script src="https://unpkg.com/bootstrap@4.0.0-beta.2/dist/js/bootstrap.js" charset="utf-8"></script>
+   <script src="./script.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="component demo">
+<!-- 在<div class="dropdown-menu加show">可以直接顯示 -->
+    <div class="dropdown">
+      <button class="btn btn-outline-warning dropdown-toggle"
+        data-toggle="dropdown">Dropdown</button>
+      <a href="#" class="btn btn-outline-success dropdown-toggle"
+        data-toggle="dropdown">Dropdown</a>
+      <div class="dropdown-menu">
+        <div class="dropdown-header">Web language</div>
+        <a href="#" class="dropdown-item">HTML</a>
+        <a href="#" class="dropdown-item">CSS</a>
+        <a href="#" class="dropdown-item">JavaScript</a>
+        <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item">More</a>
+      </div>
+    </div>
+
+<!-- 如果用class="dropdown會分開顯示  dropup從上面顯示  -->
+    <div id="dropdown-demo" class="btn-group dropup" style="position:absolute; bottom:30%; ">
+      <a href="#" class="btn btn-outline-info">Dropdown</a>
+    <!-- span class="sr-only"文字不會顯示在介面上
+          data-offset微調菜單位置 -->
+      <button class="btn btn-outline-info dropdown-toggle dropdown-toggle-split"
+        data-toggle="dropdown"
+        data-offset="15"><span class="sr-only">Toggle Dropdown</button>
+      <div class="dropdown-menu dropdown-menu-left">
+        <div class="dropdown-header">Web language</div>
+        <a href="#" class="dropdown-item">HTML</a>
+        <a href="#" class="dropdown-item">CSS</a>
+        <a href="#" class="dropdown-item">JavaScript</a>
+        <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item">More</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

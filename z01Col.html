@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>chihen bootstrap</title>
+   <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.0.0-beta.2/dist/css/bootstrap.css">
+   <link rel="stylesheet" href="./style.css">
+   <script src="https://unpkg.com/jquery@3.2.1/dist/jquery.js" charset="utf-8"></script>
+   <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" charset="utf-8"></script>
+   <script src="https://unpkg.com/bootstrap@4.0.0-beta.2/dist/js/bootstrap.js" charset="utf-8"></script>
+   <script src="./script.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="container demo">
+    <h1>hello</h1>
+    <div class="row">
+      <div class="col-5"><span>abc</span></div>
+      <div class="col-4"><span>def</span></div>
+      <div class="col-3"><span>ghi</span></div>
+      <div class="w-100"></div>
+      <div class="col"><span>abc</span></div>
+      <div class="col"><span>def</span></div>
+      <div class="col"><span>ghi</span></div>
+    </div>
+    <div class="row">
+      <div class="col-6"><span>abc</span></div>
+      <div class="col"><span>def</span></div>
+      <div class="col"><span>ghi</span></div>
+    </div>
+    <div class="row align-items-center">
+      <div class="col align-self-start"><span>abc</span></div>
+      <div class="col align-self-center"><span>def</span></div>
+      <div class="col align-self-end"><span>ghi</span></div>
+    </div>
+    <div class="row justify-content-end">
+      <div class="col-4"><span>abc</span></div>
+      <div class="col-4"><span>def</span></div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-4"><span>abc</span></div>
+      <div class="col-4"><span>def</span></div>
+    </div>
+    <div class="row justify-content-between">
+      <div class="col-4"><span>abc</span></div>
+      <div class="col-4"><span>def</span></div>
+    </div>
+    <div class="row justify-content-around">
+      <div class="col-4"><span>abc</span></div>
+      <div class="col-4"><span>def</span></div>
+    </div>
+    <div class="row">
+      <div class="col-3"><span>1</span></div>
+      <div class="col-4"><span>2</span></div>
+      <div class="col-5 order-first"><span>3</span></div>
+    </div>
+    <div class="row">
+      <div class="col order-2"><span>1</span></div>
+      <div class="col order-3"><span>2</span></div>
+      <div class="col order-1"><span>3</span></div>
+    </div>
+    <div class="row">
+      <div class="col offset-2"><span>1</span></div>
+      <div class="col"><span>2</span></div>
+      <div class="col"><span>3</span></div>
+    </div>
+    <div class="row">
+      <div class="col offset-1"><span>1</span></div>
+      <div class="col offset-2"><span>2</span></div>
+    </div>
+  <p> .col-xs- 超小屏幕 手机 (< 768px)
+      .col-sm- 小屏幕 平板 (≥768px)
+      .col-md- 中等屏幕 桌面显示器 (≥992px)
+      .col-lg- 大屏幕 大桌面显示器 (≥1200px)
+  </p>
+  <p> /xs:< 576 /  /sm:≥576 /  /md:≥768 /  /lg:≥992 /  /xl:≥1200 /  </p>
+    <div class="row">
+      <div class="col-sm-6 col-lg-3"><span>1</span></div>
+      <div class="col-sm-6 col-lg-3"><span>2</span></div>
+      <div class="col-sm-6 col-lg-3"><span>3</span></div>
+      <div class="col-sm-6 col-lg-3"><span>4</span></div>
+    </div>
+  <p> 打grid
+      會跑出
+        <div class="container">
+          <div class="row">
+
+            <div class="col-xs|sm|md|lg|xl-1-12">
+
+            </div>
+
+          </div>
+        </div>
+  </p>
+
+
+  </div>
+</body>
+</html>

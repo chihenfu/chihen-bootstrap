@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>chihen bootstrap</title>
+   <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.0.0-beta.2/dist/css/bootstrap.css">
+   <link rel="stylesheet" href="./style.css">
+   <script src="https://unpkg.com/jquery@3.2.1/dist/jquery.js" charset="utf-8"></script>
+   <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" charset="utf-8"></script>
+   <script src="https://unpkg.com/bootstrap@4.0.0-beta.2/dist/js/bootstrap.js" charset="utf-8"></script>
+   <script src="./script.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="component demo">
+        <!-- data-ride="carousel"會觸發javascript轉動旋轉木馬 預設5秒鐘 -->
+    <div class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- d-block w-100 元素寬度變成100% -->
+          <img class="d-block w-100" src="./img/3.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100"  src="./img/6.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100"  src="./img/7.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100"  src="./img/9.jpg" alt="">
+        </div>
+      </div>
+    </div>
+
+<!--   ............................    -->
+
+    <div class="carousel slide demo" id="carousel-demo">
+        <!-- <ol>是圖片下面可以點選的
+             <a>那邊carousel-control-prev/next 是左右<>點選-->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-demo" data-slide-to="1"></li>
+        <li data-target="#carousel-demo" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./img/7.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100"  src="./img/3.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100"  src="./img/6.jpg" alt="">
+        </div>
+      </div>
+      <a href="#carousel-demo" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#carousel-demo" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+<!--   ......................................   -->
+    <div class="carousel slide demo"
+      id="carousel-demo" data-interval="1000">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-demo" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-demo" data-slide-to="1"></li>
+        <li data-target="#carousel-demo" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="./img/7.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100"  src="./img/3.jpg" alt="">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100"  src="./img/6.jpg" alt="">
+        </div>
+      </div>
+      <a href="#carousel-demo" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#carousel-demo" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+
+  </div>
+</body>
+</html>
+
+
+<!-- sctipt.js
+/* 可在這設也可以直接在html裡面<div class="carousel slide demo"
+  id="carousel-demo" data-interval="1000"> */
+  $('.carousel').carousel({
+    interval: 1000
+  })
+  $('.carousel').on('slide.bs.carousel', (event) => {
+    console.log('slide: ', ˋ
+      方向: ${ event.direction }
+      從: ${ event.from }
+      到: ${ event.to }
+     ˋ)
+  })
+   $('.carousel').on('slid.bs.carousel', (event) =>{
+      console.log('slid: ',  ˋ
+        方向: ${ event.direction }
+        從: ${ event.from }
+        到: ${ event.to }
+      ˋ)
+    })
+-->

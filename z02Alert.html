@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>chihen bootstrap</title>
+   <link rel="stylesheet" href="https://unpkg.com/bootstrap@4.0.0-beta.2/dist/css/bootstrap.css">
+   <link rel="stylesheet" href="./style.css">
+   <script src="https://unpkg.com/jquery@3.2.1/dist/jquery.js" charset="utf-8"></script>
+   <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" charset="utf-8"></script>
+   <script src="https://unpkg.com/bootstrap@4.0.0-beta.2/dist/js/bootstrap.js" charset="utf-8"></script>
+   <script src="./script.js" charset="utf-8"></script>
+</head>
+<body>
+  <div class="component demo">
+    <!-- primary藍色 danger紅色
+         default預設灰色 success綠色 info淺藍 warning黃色-->
+    <!-- alert-dismissible關閉按鈕的鍵 data-dismiss="alert"按按鈕會整個影藏
+              + fade show 有過度效果 -->
+    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+      <h4>Alert</h4>
+      hello--- <a href="#" class="alert-link">see more.</a>
+      <button class="close" data-dismiss="alert">
+        &times;
+      </button>
+    </div>
+    <button class="btn btn-danger close-alert">close</button>
+
+  </div>
+</body>
+</html>
+
+<!--    script.js
+$(document).ready(() => {
+   /* 按close鍵關掉alert組件會輸出close alert
+          alert組件完全關閉後會顯示closed alert */
+  $('.close-alert').click(() => {
+    $('.alert').alert('close')
+  })
+  $('.alert').on('close.bs.alert', () => {
+    console.log('close alert')
+  })
+  $('.alert').on('closed.bs.alert', () => {
+    console.log('closed alert')
+  })
+
+})          -->

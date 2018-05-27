@@ -13,8 +13,25 @@
    <script src="./script.js" charset="utf-8"></script>
 </head>
 <body>
-  <div>
+  <div class="component demo">
+
+<!-- popover 提示訊息 -->
+    <button class="btn btn-info"
+      data-toggle="popover"
+      title="一重山"
+      data-content="一重山,二重山,山遠天高烟水寒,相思楓牡丹"
+      data-placement="bottom"
+      data-trigger="focus"
+    >
+      pop
+    </button>
 
   </div>
 </body>
 </html>
+
+<!--  script.js
+
+  $('[data-toggle="popover"]').popover()
+  
+-->
